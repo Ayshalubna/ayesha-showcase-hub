@@ -61,6 +61,10 @@ export default {
       transitionProperty: {
         'smooth': 'var(--transition-smooth)',
       },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        script: ["Dancing Script", "cursive"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

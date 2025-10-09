@@ -31,13 +31,14 @@ const Home = () => {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 animate-fade-in">
             {/* Profile Photo */}
             <div className="flex-shrink-0">
-              <div className="relative w-48 h-48 md:w-64 md:h-64">
+              <div className="relative w-48 h-64 md:w-64 md:h-80">
                 <img 
                   src={profilePhoto} 
                   alt="Ayesha Lubna" 
-                  className="w-full h-full rounded-full object-cover border-4 border-primary/30 shadow-glow"
+                  className="w-full h-full rounded-[50%] object-cover object-top border-4 border-primary/30 shadow-glow"
+                  style={{ borderRadius: '50% / 60%' }}
                 />
-                <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-20 animate-pulse"></div>
+                <div className="absolute inset-0 bg-gradient-primary opacity-20 animate-pulse" style={{ borderRadius: '50% / 60%' }}></div>
               </div>
             </div>
 
@@ -58,9 +59,13 @@ const Home = () => {
               </div>
 
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                A Data Scientist who{" "}
+                An AI Expert & Data Scientist who{" "}
                 <span className="text-primary font-semibold">transforms data</span> into{" "}
                 <span className="text-accent font-semibold">intelligent solutions</span>
+              </p>
+
+              <p className="text-xl md:text-2xl font-script text-primary/90 italic">
+                "I don't chase trends, I create them."
               </p>
 
               <p className="text-base md:text-lg text-muted-foreground">
