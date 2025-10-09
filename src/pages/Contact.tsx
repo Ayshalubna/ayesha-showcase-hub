@@ -20,13 +20,14 @@ const Contact = () => {
     e.preventDefault();
 
     // Create mailto link with form data
-    const mailtoLink = `mailto:ayeshalubna6677@gmail.com?subject=${encodeURIComponent(
-      formData.subject
-    )}&body=${encodeURIComponent(
+    const subject = encodeURIComponent(formData.subject);
+    const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    )}`;
+    );
+    const mailtoLink = `mailto:ayeshalubna6677@gmail.com?subject=${subject}&body=${body}`;
 
-    window.location.href = mailtoLink;
+    // Open mailto link
+    window.open(mailtoLink, '_blank');
 
     toast({
       title: "Opening email client...",

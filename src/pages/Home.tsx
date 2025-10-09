@@ -3,6 +3,7 @@ import { ArrowRight, Download, Sparkles, Database, Brain, Cloud } from "lucide-r
 import { Link } from "react-router-dom";
 import techBackdrop1 from "@/assets/tech-backdrop-1.jpg";
 import techBackdrop2 from "@/assets/tech-backdrop-2.jpg";
+import profilePhoto from "@/assets/home.jpg";
 
 const Home = () => {
   return (
@@ -27,45 +28,67 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
         <div className="container mx-auto max-w-5xl relative z-10">
-          <div className="text-center space-y-6 animate-fade-in">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-medium mb-4 backdrop-blur-sm">
-              <Sparkles size={16} />
-              AI/ML Engineer & Data Scientist
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 animate-fade-in">
+            {/* Profile Photo */}
+            <div className="flex-shrink-0">
+              <div className="relative w-48 h-48 md:w-64 md:h-64">
+                <img 
+                  src={profilePhoto} 
+                  alt="Ayesha Lubna" 
+                  className="w-full h-full rounded-full object-cover border-4 border-primary/30 shadow-glow"
+                />
+                <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-20 animate-pulse"></div>
+              </div>
             </div>
 
-            <div className="space-y-2">
-              <p className="text-lg text-primary">Hello! I Am</p>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-                <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  Ayesha Lubna
-                </span>
-              </h1>
-            </div>
+            {/* Content */}
+            <div className="flex-1 text-center md:text-left space-y-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-medium mb-4 backdrop-blur-sm">
+                <Sparkles size={16} />
+                AI/ML Engineer & Data Scientist
+              </div>
 
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              A Data Scientist who{" "}
-              <span className="text-primary font-semibold">transforms data</span> into{" "}
-              <span className="text-accent font-semibold">intelligent solutions</span>
-            </p>
+              <div className="space-y-2">
+                <p className="text-lg text-primary">Hello! I Am</p>
+                <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+                  <span className="bg-gradient-primary bg-clip-text text-transparent">
+                    Ayesha Lubna
+                  </span>
+                </h1>
+              </div>
 
-            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-              Transforming complex data into actionable insights and building intelligent solutions
-              with machine learning, analytics, and cloud technologies.
-            </p>
+              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+                A Data Scientist who{" "}
+                <span className="text-primary font-semibold">transforms data</span> into{" "}
+                <span className="text-accent font-semibold">intelligent solutions</span>
+              </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
-              <Button asChild size="lg" className="group shadow-glow hover:shadow-glow transition-all bg-gradient-primary border-0">
-                <Link to="/projects">
-                  View My Work
-                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-                </Link>
-              </Button>
+              <p className="text-base md:text-lg text-muted-foreground">
+                Transforming complex data into actionable insights and building intelligent solutions
+                with machine learning, analytics, and cloud technologies.
+              </p>
 
-              <Button asChild variant="outline" size="lg" className="group border-primary/30 hover:bg-primary/10">
-                <Link to="/contact">
-                  Get In Touch
-                </Link>
-              </Button>
+              <div className="flex flex-col sm:flex-row items-center md:items-start gap-4 pt-6">
+                <Button asChild size="lg" className="group shadow-glow hover:shadow-glow transition-all bg-gradient-primary border-0">
+                  <Link to="/resume">
+                    Hire Me
+                    <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                  </Link>
+                </Button>
+
+                <Button asChild size="lg" className="group shadow-glow hover:shadow-glow transition-all bg-gradient-primary border-0">
+                  <Link to="/projects">
+                    View My Work
+                    <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                  </Link>
+                </Button>
+
+                <Button asChild variant="outline" size="lg" className="group border-primary/30 hover:bg-primary/10">
+                  <Link to="/contact">
+                    Get In Touch
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>

@@ -37,7 +37,7 @@ const Resume = () => {
                 <div className="p-3 rounded-lg bg-gradient-primary">
                   <FileText size={24} className="text-white" />
                 </div>
-                <CardTitle className="text-2xl">AI/ML Engineer Resume</CardTitle>
+                <CardTitle className="text-2xl">My Resume</CardTitle>
               </div>
               <CardDescription className="text-base">
                 Focused on machine learning, AI engineering, and deep learning expertise
@@ -61,7 +61,7 @@ const Resume = () => {
                 </ul>
               </div>
               <Button asChild className="w-full shadow-glow bg-gradient-primary border-0 hover:shadow-glow text-white">
-                <a href="/resumes/ayesha-lubna-ml-engineer.pdf" download>
+                <a href="/resumes/ayesha-lubna-resume.pdf" download="Ayesha_Lubna_Resume.pdf">
                   <Download className="mr-2" size={18} />
                   Download PDF
                 </a>

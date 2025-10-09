@@ -1,4 +1,5 @@
 import { GraduationCap, Briefcase, Award, Target } from "lucide-react";
+import aboutPhoto from "@/assets/about.jpg";
 
 const About = () => {
   return (
@@ -20,15 +21,13 @@ const About = () => {
 
         {/* Single Photo Section */}
         <div className="flex justify-center mb-16 animate-scale-in">
-          <div
-            className="w-64 h-64 md:w-80 md:h-80 rounded-2xl bg-card/50 backdrop-blur-sm border-2 border-primary/30 shadow-glow hover:shadow-glow transition-all duration-300 hover:-translate-y-2 flex items-center justify-center overflow-hidden"
-          >
-            <div className="text-center p-6">
-              <p className="text-lg text-muted-foreground mb-2">Profile Photo</p>
-              <p className="text-sm text-muted-foreground">
-                (Add your image here)
-              </p>
-            </div>
+          <div className="relative w-64 h-64 md:w-80 md:h-80">
+            <img 
+              src={aboutPhoto} 
+              alt="Ayesha Lubna" 
+              className="w-full h-full rounded-2xl object-cover border-4 border-primary/30 shadow-glow hover:shadow-glow transition-all duration-300 hover:-translate-y-2"
+            />
+            <div className="absolute inset-0 rounded-2xl bg-gradient-primary opacity-10"></div>
           </div>
         </div>
 
