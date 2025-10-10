@@ -108,7 +108,7 @@ const Resume = () => {
               Let's discuss how I can contribute to your team
             </p>
             <Button asChild size="lg" className="shadow-glow bg-gradient-primary border-0 hover:shadow-glow">
-              <a href="/contact#message-form">Get In Touch</a>
+              <a href="/contact">Get In Touch</a>
             </Button>
           </div>
         </div>
