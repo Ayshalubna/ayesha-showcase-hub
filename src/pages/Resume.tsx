@@ -104,12 +104,12 @@ const Resume = () => {
         <div className="mt-16 text-center animate-fade-in">
           <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-12 border border-primary/20 shadow-glow">
             <h2 className="text-2xl font-bold mb-4">Interested in working together?</h2>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-muted-foreground mb-2">
               Let's discuss how I can contribute to your team
             </p>
-            <Button asChild size="lg" className="shadow-glow bg-gradient-primary border-0 hover:shadow-glow">
-              <a href="/contact">Get In Touch</a>
-            </Button>
+            <p className="text-muted-foreground">
+              Feel free to contact me to discuss opportunities
+            </p>
           </div>
         </div>
       </div>
