@@ -75,7 +75,17 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    @apply bg-background;
+  }
+
   body {
     @apply bg-background text-foreground;
+    min-height: 100vh;
   }
+}
+
+/* Prevent flash of white background on page load */
+html {
+  background-color: hsl(260 40% 8%);
 }
