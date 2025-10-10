@@ -20,15 +20,18 @@ const About = () => {
         </div>
 
         {/* Single Photo Section */}
-        <div className="flex justify-center mb-16 animate-scale-in">
-          <div className="relative w-56 h-56 md:w-64 md:h-64">
+        <div className="flex flex-col items-center mb-16 animate-scale-in">
+          <div className="relative w-48 h-48 md:w-56 md:h-56 mb-6">
             <img 
               src={aboutPhoto} 
               alt="Ayesha Lubna" 
-              className="w-full h-full rounded-full object-cover object-center border-4 border-primary/30 shadow-glow hover:shadow-glow transition-all duration-300 hover:-translate-y-2"
+              className="w-full h-full rounded-full object-cover object-top border-4 border-primary/30 shadow-glow hover:shadow-glow transition-all duration-300 hover:-translate-y-2"
             />
             <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-10"></div>
           </div>
+          <p className="font-script text-2xl md:text-3xl text-center text-muted-foreground italic px-4 max-w-2xl">
+            "Growth is doing what you're not yet proud of, until you are."
+          </p>
         </div>
 
         {/* Bio Section */}
