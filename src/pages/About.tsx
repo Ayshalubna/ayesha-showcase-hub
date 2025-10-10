@@ -21,13 +21,13 @@ const About = () => {
 
         {/* Single Photo Section */}
         <div className="flex justify-center mb-16 animate-scale-in">
-          <div className="relative w-64 h-80 md:w-80 md:h-96">
+          <div className="relative w-56 h-56 md:w-64 md:h-64">
             <img 
               src={aboutPhoto} 
               alt="Ayesha Lubna" 
-              className="w-full h-full rounded-2xl object-cover object-top border-4 border-primary/30 shadow-glow hover:shadow-glow transition-all duration-300 hover:-translate-y-2"
+              className="w-full h-full rounded-full object-cover object-center border-4 border-primary/30 shadow-glow hover:shadow-glow transition-all duration-300 hover:-translate-y-2"
             />
-            <div className="absolute inset-0 rounded-2xl bg-gradient-primary opacity-10"></div>
+            <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-10"></div>
           </div>
         </div>
 
