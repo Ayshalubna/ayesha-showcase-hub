@@ -100,7 +100,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Contact Form */}
-          <div className="lg:col-span-2 animate-slide-in">
+          <div id="message-form" className="lg:col-span-2 animate-slide-in scroll-mt-24">
             <Card className="shadow-card border-primary/20 bg-card/50 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-2xl">Send a Message</CardTitle>
