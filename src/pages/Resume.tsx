@@ -25,7 +25,7 @@ const Resume = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Resume</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Download my AI/ML Engineer resume
+            Choose and download the resume that fits your needs
           </p>
         </div>
 
