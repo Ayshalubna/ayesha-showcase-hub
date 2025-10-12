@@ -30,14 +30,15 @@ const Resume = () => {
         </div>
 
         {/* Resume Download */}
-        <div className="max-w-2xl mx-auto mb-16">
+        <div className="max-w-4xl mx-auto mb-16 grid md:grid-cols-2 gap-6">
+          {/* AI/ML Resume */}
           <Card className="shadow-glow border-primary/30 bg-card/50 backdrop-blur-sm hover:shadow-glow transition-all duration-300 hover:-translate-y-1 animate-scale-in">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <div className="p-3 rounded-lg bg-gradient-primary">
                   <FileText size={24} className="text-white" />
                 </div>
-                <CardTitle className="text-2xl">My Resume</CardTitle>
+                <CardTitle className="text-xl">AI/ML Resume</CardTitle>
               </div>
               <CardDescription className="text-base">
                 Focused on machine learning, AI engineering, and deep learning expertise
@@ -61,7 +62,46 @@ const Resume = () => {
                 </ul>
               </div>
               <Button asChild className="w-full shadow-glow bg-gradient-primary border-0 hover:shadow-glow text-white">
-                <a href="/resumes/ayesha-lubna-resume.pdf" download="Ayesha_Lubna_Resume.pdf">
+                <a href="/resumes/lubna-aiml-resume.pdf" download="Lubna_AIML_Resume.pdf">
+                  <Download className="mr-2" size={18} />
+                  Download PDF
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Data Analyst Resume */}
+          <Card className="shadow-glow border-primary/30 bg-card/50 backdrop-blur-sm hover:shadow-glow transition-all duration-300 hover:-translate-y-1 animate-scale-in" style={{ animationDelay: '0.1s' }}>
+            <CardHeader>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="p-3 rounded-lg bg-gradient-primary">
+                  <FileText size={24} className="text-white" />
+                </div>
+                <CardTitle className="text-xl">Data Analyst Resume</CardTitle>
+              </div>
+              <CardDescription className="text-base">
+                Focused on data analytics, visualization, and business intelligence
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div>
+                <h4 className="text-sm font-semibold mb-3 text-primary">Highlights</h4>
+                <ul className="space-y-2">
+                  {[
+                    "Data Analytics & Visualization",
+                    "Power BI & Tableau expertise",
+                    "Statistical analysis and reporting",
+                    "Business intelligence solutions",
+                  ].map((highlight, idx) => (
+                    <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <Button asChild className="w-full shadow-glow bg-gradient-primary border-0 hover:shadow-glow text-white">
+                <a href="/resumes/lubna-analytics-resume.pdf" download="Lubna_Analytics_Resume.pdf">
                   <Download className="mr-2" size={18} />
                   Download PDF
                 </a>
