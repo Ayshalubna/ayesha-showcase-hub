@@ -59,7 +59,7 @@ const Home = () => {
               </div>
 
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                An AI Expert & Data Scientist and BI Specialist who{" "}
+                An AI Expert, Data Scientist and BI Specialist who{" "}
                 <span className="text-primary font-semibold">transforms data</span> into{" "}
                 <span className="text-accent font-semibold">intelligent solutions</span>
               </p>
