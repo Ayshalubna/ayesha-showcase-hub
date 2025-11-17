@@ -110,7 +110,7 @@ const About = () => {
                     </h3>
                     <p className="text-primary font-medium">Rubixe.ai</p>
                   </div>
-                  <p className="text-sm font-medium">Jan - Mar 2024</p>
+                  <p className="text-sm font-medium">Feb - Aug 2025</p>
                 </div>
                 <ul className="list-disc list-inside text-muted-foreground space-y-2">
                   <li>Built predictive models and Power BI dashboards enabling data-driven client decisions</li>
